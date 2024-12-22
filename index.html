@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divya & Aditya's Wedding</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #ffe5e0, #fff1f0);
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(120deg, #ff6f61, #ff9472);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 2px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.5em;
+            font-style: italic;
+            animation: fadeIn 4s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .event-section {
+            margin: 30px auto;
+            max-width: 900px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding: 20px;
+            border: 2px solid #ff6f61;
+        }
+
+        .event {
+            padding: 20px;
+            border-bottom: 2px dashed #ff6f61;
+            animation: slideIn 2s ease-in-out;
+        }
+
+        .event:last-child {
+            border-bottom: none;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+
+        .event h2 {
+            color: #ff6f61;
+            margin: 0 0 15px;
+            font-size: 1.8em;
+        }
+
+        .event p {
+            margin: 0 0 10px;
+            line-height: 1.6;
+            font-size: 1.1em;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 1em;
+            color: #666;
+            background: #fff1f0;
+            border-top: 2px solid #ff6f61;
+        }
+
+        .footer p {
+            margin: 0;
+            animation: fadeIn 5s ease-in-out;
+        }
+
+        .banner {
+            text-align: center;
+            margin: 30px auto;
+        }
+
+        .banner img {
+            max-width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+
+            header p {
+                font-size: 1.2em;
+            }
+
+            .event h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Divya & Aditya</h1>
+        <p>"Two hearts, one soul"</p>
+    </header>
+
+    <div class="event-section">
+        <div class="event">
+            <h2>💍 Ring Ceremony</h2>
+            <p><strong>Date:</strong> March 15, 2024</p>
+            <p><strong>Time:</strong> 6:00 PM</p>
+            <p><strong>Venue:</strong> Crystal Ballroom, The Grand Hotel, Delhi</p>
+        </div>
+
+        <div class="event">
+            <h2>🌼 Haldi Ceremony</h2>
+            <p><strong>Date:</strong> March 16, 2024</p>
+            <p><strong>Time:</strong> 11:00 AM</p>
+            <p><strong>Venue:</strong> Lotus Garden, Delhi</p>
+        </div>
+
+        <div class="event">
+            <h2>💒 The Wedding</h2>
+            <p><strong>Date:</strong> March 17, 2024</p>
+            <p><strong>Time:</strong> 7:00 PM</p>
+            <p><strong>Venue:</strong> Royal Palace, Delhi</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>We can't wait to celebrate this joyous occasion with you! ❤️</p>
+    </footer>
+</body>
+</html>
